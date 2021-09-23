@@ -17,7 +17,7 @@ const weatherUpdate = (latitude ,longitude ,callback ) => {
   callback( 'unable to find location' , undefined )
    }
    else{
-     callback( undefined , 'wind speed '+body.current.weather_descriptions[2]+ '  '+body.current.weather_descriptions[0]+' the current temprature is '+ body.current.temperature+' and it feels like '+  body.current.temperature)
+     callback( undefined , body.current.weather_descriptions[0]+' the current temprature is '+ body.current.temperature+' and it feels like '+  body.current.temperature + 'the humidity is '+ body.current.humidity + "%")
   //  return callback(body.current.weather_descriptions[0]+' the current temprature is '+ body.current.temperature+' and it feels like '+  body.current.temperature)
   }
     
